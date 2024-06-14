@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "architectury_plugin"
+version = "${version}"
+displayName = "New Architectury Plugin Proof of Concept"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.architectury_plugin]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.architectury_plugin]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "architectury_plugin.mixins.json"

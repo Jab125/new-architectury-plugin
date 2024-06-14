@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.architectury.plugin.mixin",
+  "plugin": "dev.architectury.plugin.ArchitecturyPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "TransformerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "architectury_plugin",
+  "version": "${version}",
+  "name": "New Architectury Plugin Proof of Concept",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/architectury_plugin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.architectury.plugin.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "dev.architectury.plugin.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "architectury_plugin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.6",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
